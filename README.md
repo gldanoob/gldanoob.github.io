@@ -1,2 +1,2 @@
 # cool site
-[](https://gldanoob.github.io/)
+<https://gldanoob.github.io/>
