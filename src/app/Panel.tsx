@@ -3,9 +3,9 @@ import '../style/Panel.css';
 export default function Panel() {
     return (
         <div className='panel'>
-            <svg viewBox="0 0 10 10" height="300" width="300">
+            <svg viewBox="0 0 9 9" height="100%" width="100%">
                 <path
-                    stroke='#fff' strokeWidth={0.05} fill='#ffffff10'>
+                    stroke='#fffa' strokeWidth='0.005px' fill='#ffffff10'>
                     <animate id="first" attributeName="d" dur="3s"
                         repeatCount='indefinite'
                         calcMode="spline"
@@ -16,7 +16,6 @@ export default function Panel() {
                         M10 0C7 6 2 8 0 10 h10;
                         M 10 0 C 6 7 2 5 0 10 h10'/>
                 </path>
-                <text x="5.5" y="8.5" fontSizeAdjust='0.8' fill="#fff" fontSize="0.5">PROJECTS</text>
             </svg>
         </div>
     );
