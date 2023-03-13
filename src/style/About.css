@@ -1,10 +1,9 @@
 .about {
     font-size: 1em;
-    max-width: 70em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10em;
+    padding: 2em;
 }
 
 .about>* {

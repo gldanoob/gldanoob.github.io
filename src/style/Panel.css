@@ -1,0 +1,24 @@
+.panel {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    font-size: 3rem;
+    animation: swell 3s ease-in-out infinite;
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate3d(0, 5px, 0);
+    }
+
+    33% {
+        transform: translate3d(5px, 5px, 0);
+    }
+
+    66% {
+        transform: translate3d(5px, 0px, 0);
+    }
+}
