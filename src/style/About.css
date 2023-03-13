@@ -1,0 +1,50 @@
+.about {
+    font-size: 1em;
+    max-width: 70em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10em;
+}
+
+.about>* {
+    padding: 0em;
+}
+
+h1 {
+    margin: 0 0 0.5em;
+}
+
+h3 {
+    margin: 0 0 2.5em;
+}
+
+@keyframes moveup {
+    0% {
+        transform: translateY(4em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.move {
+    animation: 0.5s ease-in-out 0.5s moveup backwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    margin: 0;
+    padding: 0;
+    animation: 1s linear 0.7s fadein backwards;
+}
