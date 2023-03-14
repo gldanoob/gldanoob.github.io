@@ -1,25 +1,42 @@
 .panel {
     position: fixed;
     bottom: 0px;
-    right: -100px;
     font-size: 3rem;
     animation: swell 3s ease-in-out infinite;
-    height: 150vh;
     transition: all 0.5s ease-in-out;
+    height: 250vw;
+    width: 250vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media all and (orientation:portrait) {
+    .panel {
+        height: 220vw;
+        width: 220vw;
+    }
+}
+
+@media all and (orientation:landscape) {
+    .panel {
+        height: 220vh;
+        width: 220vh;
+    }
 }
 
 @keyframes swell {
 
     0%,
     100% {
-        transform: translate3d(0, 100px, 2px);
+        transform: translate(-50%, -50%) translate3d(-50px, 50px, 0);
     }
 
     33% {
-        transform: translate3d(100px, 100px, 0);
+        transform: translate(-50%, -50%) translate3d(50px, 50px, 0);
     }
 
     66% {
-        transform: translate3d(100px, 0px, 0);
+        transform: translate(-50%, -50%) translate3d(50px, -50px, 0);
     }
 }
