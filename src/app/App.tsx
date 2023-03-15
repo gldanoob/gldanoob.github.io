@@ -1,6 +1,6 @@
 import '../style/App.css';
 import About from './About';
-import Panel from './Panel';
+import Panel from './Wave';
 
 function App() {
 

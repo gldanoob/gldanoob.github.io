@@ -1,11 +1,11 @@
-import '../style/Panel.css';
+import '../style/Wave.css';
 
 export default function Panel() {
     return (
         <div className='panel'>
             <svg viewBox="-5 -5 20 20" height="100%" width="100%">
                 <path
-                    stroke='#fffa' strokeWidth='0.005px' fill='#ffffff10'>
+                    stroke='#fffa' strokeWidth='0.005px' fill='#ffffff10' fillRule='evenodd'>
                     <animate id="first" attributeName="d" dur="3s"
                         repeatCount='indefinite'
                         calcMode="spline"
