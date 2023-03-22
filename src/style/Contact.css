@@ -1,0 +1,17 @@
+.contact {
+    position: fixed;
+    top: 3em;
+    left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 3em;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

@@ -1,24 +1,33 @@
+import { useState } from 'react';
 import '../style/App.css';
 import About from './About';
-import Panel from './Wave';
+import Bg from './Bg';
+import Contact from './Contact';
+import Projects from './Projects';
 
-function App() {
-  function mouseMove(e: MouseEvent) {
-    let panels = document.querySelectorAll('.panel') as NodeListOf<HTMLDivElement>;
-    panels.forEach(element => {
-      let x = (window.innerWidth / 2 - e.pageX);
-      element.style.transform = `translate(-50%, -50%) translateX(${x}px)`;
-    });
+export enum Panel {
+  About,
+  Projects,
+  Contact,
+}
+
+export function App() {
+  const [panel, setPanel] = useState(Panel.About);
+
+  function toggleRight() {
+    setPanel(panel == Panel.About ? Panel.Projects : Panel.About)
   }
 
-  document.body.addEventListener('mousemove', mouseMove);
+  function toggleLeft() {
+    setPanel(panel == Panel.About ? Panel.Contact : Panel.About)
+  }
 
   return (
     <div className='App'>
-      <About />
-      <Panel/>
+      <About visible={panel == Panel.About} />
+      <Bg panel={panel} />
+      <Contact click={() => toggleLeft()} open={panel == Panel.Contact}></Contact>
+      <Projects click={() => toggleRight()} open={panel == Panel.Projects} />
     </div>
   );
 }
-
-export default App;
