@@ -2,8 +2,8 @@ import '../style/Wave.css';
 
 export default function Panel() {
     return (
-        <div className='panel'>
-            <svg viewBox="-5 -5 20 20" height="100%" width="100%">
+        <div className='panel' >
+            <svg className='wave' viewBox="-5 -5 20 20" height="100%" width="100%">
                 <path
                     stroke='#fffa' strokeWidth='0.005px' fill='#ffffff10' fillRule='evenodd'>
                     <animate id="first" attributeName="d" dur="3s"

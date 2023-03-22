@@ -1,12 +1,18 @@
 .panel {
     position: fixed;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wave {
+    position: absolute;
+    right: 0px;
     bottom: 0px;
     font-size: 3rem;
     animation: swell 3s ease-in-out infinite;
     transition: all 0.5s ease-in-out;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 @media all and (orientation:portrait) {
@@ -27,18 +33,18 @@
 
     0%,
     100% {
-        transform: translate(-50%, -50%) translate3d(-2%, 2%, 0);
+        transform: translate3d(-2%, 2%, 0);
     }
 
     25% {
-        transform: translate(-50%, -50%) translate3d(2%, 2%, 0);
+        transform: translate3d(2%, 2%, 0);
     }
 
     50% {
-        transform: translate(-50%, -50%) translate3d(2%, -2%, 0);
+        transform: translate3d(2%, -2%, 0);
     }
 
     75% {
-        transform: translate(-50%, -50%) translate3d(-2%, -2%, 0);
+        transform: translate3d(-2%, -2%, 0);
     }
 }
