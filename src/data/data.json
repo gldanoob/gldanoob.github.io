@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "name": "Coursework Dashboard",
+            "description": "sfsffs",
+            "image": "assets/cw-db.png"
+        },
+        {
+            "name": "???",
+            "description": "???",
+            "image": "assets/maf.png"
+        },
+        {
+            "name": "More in GitHub",
+            "description": "BRUH",
+            "image": "assets/github.png"
+        }
+    ]
+}

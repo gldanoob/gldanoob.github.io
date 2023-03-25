@@ -5,7 +5,7 @@
 }
 
 .closed {
-    transform: translate(-50%, -50%) translateX(0vw) rotate(0deg) scale(1) 
+    transform: translate(-50%, -50%) translateX(0vw) rotate(0deg) scale(1)
 }
 
 .right-open {
@@ -14,7 +14,7 @@
 
 .left-open {
     transform: translate(-50%, -50%) translateX(40vw) rotate(-45deg) scale(1.5)
-} 
+}
 
 .wave {
     /* fucking lag */
@@ -56,6 +56,7 @@
         height: 150vw;
         width: 150vw;
     }
+
     .right-fill {
         position: absolute;
         left: 150vw;
@@ -78,6 +79,7 @@
         height: 120vh;
         width: 120vh;
     }
+
     .right-fill {
         position: absolute;
         left: 120vh;
@@ -96,6 +98,7 @@
 }
 
 @keyframes swell {
+
     0%,
     100% {
         transform: translate(-2%, 2%);

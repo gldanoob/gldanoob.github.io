@@ -1,14 +1,37 @@
+import { useState } from 'react';
+import data from '../data/data.json';
 import '../style/Projects.css';
+import ProjectItem from './ProjectItem';
 
 interface Props {
     click: () => void;
     open: boolean;
+    hidden: boolean;
 }
 
 export default function Projects(props: Props) {
+    const [selected, setSelected] = useState(0);
+    const select = (index: number) => {
+        console.log('selecting ' + index);
+        setSelected(index);
+    }
+
     return (
-        <div className="projects" onClick={props.click}>
-            <h2>{props.open ? '[-Projects]' : '[+Projects]'}</h2>
-        </div>
+        <>
+            <h2 className={'projects-btn ' + (props.hidden ? 'hidden' : '')} onClick={props.click}>
+                {props.open ? '[-Projects]' : '[+Projects]'}
+            </h2>
+            <div className={'projects ' + (props.open ? '' : 'hidden')}>
+                {/* TODO: Fix Dumb way to add images */}
+                <img src={data.projects[selected].image} className='project-image' />
+                <div className='project-list'>
+                    {
+                        data.projects.map((item, index) =>
+                            <ProjectItem name={item.name} selected={selected == index} hover={() => select(index)} />
+                        )
+                    }
+                </div>
+            </div>
+        </>
     );
 }

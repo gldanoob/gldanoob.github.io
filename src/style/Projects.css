@@ -1,17 +1,72 @@
 .projects {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+    padding: 2em;
+    z-index: 1;
+}
+
+.projects-btn {
+    position: fixed;
     bottom: 3em;
     right: 3em;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    margin-top: 3em;
     transition: all 0.2s ease-in-out;
+    z-index: 10;
 }
 
-.projects:hover {
+@media screen and (max-width: 768px) {
+    .projects-btn {
+        bottom: 1em;
+        right: 1em;
+    }
+}
+
+.projects-btn:hover {
     cursor: pointer;
     opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    align-items: left;
+}
+
+.project-item {
+    font-size: 2em;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.project-image {
+    display: block;
+    width: 60em;
+    transform: perspective(1000px) rotate3d(0, 1, 0, 15deg);
+}
+
+.selected {
+    font-size: 3em;
 }
