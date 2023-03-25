@@ -32,6 +32,11 @@
         bottom: 1em;
         right: 1em;
     }
+
+    .projects {
+        flex-direction: column;
+        gap: 5em;
+    }
 }
 
 .projects-btn:hover {
@@ -59,12 +64,14 @@
     z-index: 10;
     white-space: nowrap;
     overflow: visible;
+    transform: perspective(1000px) rotate3d(0, 1, 0, -10deg);
 }
 
 .project-image {
     display: block;
     width: 60em;
     transform: perspective(1000px) rotate3d(0, 1, 0, 15deg);
+    opacity: .9;
 }
 
 .selected {
