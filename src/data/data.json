@@ -6,14 +6,41 @@
             "image": "assets/cw-db.png"
         },
         {
+            "name": "NOOBLANG",
+            "description": "",
+            "image": "assets/nooblang.png"
+        },
+        {
             "name": "???",
             "description": "???",
             "image": "assets/maf.png"
         },
         {
-            "name": "More in GitHub",
+            "name": "Among twerk mosiac generator",
+            "description": "Among twerk mosiac generator",
+            "image": "assets/amog.gif"
+        },
+        {
+            "name": "3D engine in terminal",
+            "description": "",
+            "image": "assets/3d.gif"
+        },
+        {
+            "name": "More on GitHub",
             "description": "BRUH",
             "image": "assets/github.png"
+        }
+    ],
+    "contacts": [
+        {
+            "name": "GitHub",
+            "image": "assets/github.svg",
+            "link": "https://github.com/gldanoob"
+        },
+        {
+            "name": "Discord",
+            "image": "assets/discord-mark-white.svg",
+            "link": "https://discord.com/users/439052807790657557"
         }
     ]
 }

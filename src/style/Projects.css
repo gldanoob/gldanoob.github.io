@@ -40,7 +40,6 @@
 }
 
 .projects-btn:hover {
-    cursor: pointer;
     opacity: 0.5;
     transform: scale(1.1);
 }
@@ -56,24 +55,34 @@
     flex-direction: column;
     width: 40em;
     align-items: left;
+    transform: perspective(1000px) rotate3d(0, 1, 0, -10deg);
 }
 
 .project-item {
-    font-size: 2em;
+    font-size: 1.8em;
     transition: all 0.2s ease-in-out;
     z-index: 10;
     white-space: nowrap;
     overflow: visible;
-    transform: perspective(1000px) rotate3d(0, 1, 0, -10deg);
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, -10deg);
+    }
+    100% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, 10deg);
+    }
 }
 
 .project-image {
     display: block;
     width: 60em;
-    transform: perspective(1000px) rotate3d(0, 1, 0, 15deg);
+    animation: rotate 5s ease-in-out infinite alternate;
     opacity: .9;
 }
 
 .selected {
-    font-size: 3em;
+    font-size: 2.5em;
+    text-decoration: underline;
 }

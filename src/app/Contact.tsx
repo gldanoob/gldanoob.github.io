@@ -1,4 +1,6 @@
 import '../style/Contact.css';
+import ContactItem from './ContactItem';
+import data from '../data/data.json';
 
 interface Props {
     click: () => void;
@@ -13,7 +15,11 @@ export default function Contact(props: Props) {
                 {props.open ? '[-Contact]' : '[+Contact]'}
             </h2>
             <div className={'contact ' + (props.open ? '' : 'hidden')}>
-                u can't find me
+                {
+                    data.contacts.map((item) =>
+                        <ContactItem name={item.name} image={item.image} link={item.link} />
+                    )
+                }
             </div>
         </>
     );

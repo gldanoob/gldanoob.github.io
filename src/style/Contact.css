@@ -8,6 +8,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 2em;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+    padding: 2em;
     z-index: 1;
 }
 
@@ -32,7 +36,6 @@
 }
 
 .contact-btn:hover {
-    cursor: pointer;
     opacity: 0.5;
     transform: scale(1.1);
 }
@@ -42,3 +45,32 @@
     opacity: 0;
     transition: visibility 0s .5s, opacity .5s linear;
 }
+
+
+.contact-icon {
+    width: 5em;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(30deg);
+    }
+
+    66% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.contact-icon:hover{
+    animation: swing 1s ease-in-out infinite forwards;
+}
+
