@@ -27,7 +27,9 @@ h3 {
     }
 
     100% {
-        transform: translateY(0) /*rotate3d(1, 0, 0, 20deg) */;
+        transform: translateY(0)
+            /*rotate3d(1, 0, 0, 20deg) */
+        ;
     }
 }
 

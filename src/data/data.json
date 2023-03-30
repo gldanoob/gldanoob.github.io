@@ -3,32 +3,38 @@
         {
             "name": "Coursework Dashboard",
             "description": "sfsffs",
-            "image": "assets/cw-db.png"
+            "image": "assets/cw-db.png",
+            "url": "https://cw-dashboard-4b5b2.web.app/mod/CS101"
         },
         {
             "name": "NOOBLANG",
             "description": "",
-            "image": "assets/nooblang.png"
+            "image": "assets/nooblang.png",
+            "url": "https://github.com/gldanoob/nooblang-rust"
         },
         {
-            "name": "???",
+            "name": "Neural Network in Rust",
             "description": "???",
-            "image": "assets/maf.png"
+            "image": "assets/maf.png",
+            "url": "https://github.com/gldanoob/nn-rust"
         },
         {
-            "name": "Among twerk mosiac generator",
-            "description": "Among twerk mosiac generator",
-            "image": "assets/amog.gif"
+            "name": "Sussy mosiac",
+            "description": "",
+            "image": "assets/amog.gif",
+            "url": "https://github.com/gldanoob/sussy-mosaic"
         },
         {
             "name": "3D engine in terminal",
             "description": "",
-            "image": "assets/3d.gif"
+            "image": "assets/3d.gif",
+            "url": ""
         },
         {
             "name": "More on GitHub",
             "description": "BRUH",
-            "image": "assets/github.png"
+            "image": "assets/github.png",
+            "url": "https://github.com/gldanoob"
         }
     ],
     "contacts": [

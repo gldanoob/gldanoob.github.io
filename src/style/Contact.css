@@ -16,28 +16,8 @@
 }
 
 .contact-btn {
-    position: fixed;
-    top: 3em;
-    left: 3em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    transition: all 0.2s ease-in-out;
-    z-index: 10;
-}
-
-@media screen and (max-width: 768px) {
-    .contact-btn {
-        top: 1em;
-        left: 1em;
-    }
-}
-
-.contact-btn:hover {
-    opacity: 0.5;
-    transform: scale(1.1);
+    top: calc(16px + 1vw);
+    left: calc(16px + 1vw)
 }
 
 .hidden {
@@ -45,7 +25,6 @@
     opacity: 0;
     transition: visibility 0s .5s, opacity .5s linear;
 }
-
 
 .contact-icon {
     width: 5em;
@@ -70,7 +49,16 @@
     }
 }
 
-.contact-icon:hover{
+.contact-icon:hover {
     animation: swing 1s ease-in-out infinite forwards;
 }
 
+@media screen and (max-width: 768px) {
+    .contact {
+        gap: 1em;
+    }
+
+    .contact-icon {
+        width: 3em;
+    }
+}

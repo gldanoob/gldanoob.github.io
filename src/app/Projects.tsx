@@ -18,7 +18,7 @@ export default function Projects(props: Props) {
 
     return (
         <>
-            <h2 className={'projects-btn ' + (props.hidden ? 'hidden' : '')} onClick={props.click}>
+            <h2 className={'btn projects-btn ' + (props.hidden ? 'hidden' : '')} onClick={props.click}>
                 {props.open ? '[-Projects]' : '[+Projects]'}
             </h2>
             <div className={'projects ' + (props.open ? '' : 'hidden')}>
@@ -27,7 +27,7 @@ export default function Projects(props: Props) {
                 <div className='project-list'>
                     {
                         data.projects.map((item, index) =>
-                            <ProjectItem name={item.name} selected={selected == index} hover={() => select(index)} />
+                            <ProjectItem name={item.name} url={item.url} selected={selected == index} hover={() => select(index)} />
                         )
                     }
                 </div>
