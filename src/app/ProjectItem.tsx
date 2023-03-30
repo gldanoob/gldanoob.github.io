@@ -11,11 +11,10 @@ export default function ProjectItem(props: Props) {
 
     const nav = () => {
         window.open(props.url);
-        console.log('click')
     }
 
     return (
-        <div className={classes.join(' ')} onMouseOver={props.hover} onClick={nav} >
+        <div className={classes.join(' ')} onMouseOver={props.hover} onTouchStart={props.hover}>
             <div className='project-name'>
                 {props.name}
             </div>
