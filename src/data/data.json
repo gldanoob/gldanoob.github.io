@@ -45,8 +45,13 @@
         },
         {
             "name": "Discord",
-            "image": "assets/discord-mark-white.svg",
+            "image": "assets/discord.svg",
             "link": "https://discord.com/users/439052807790657557"
+        },
+        {
+            "name": "Gmail",
+            "image": "assets/gmail.svg",
+            "link": "mailto:caleblolhk@gmail.com"
         }
     ]
 }

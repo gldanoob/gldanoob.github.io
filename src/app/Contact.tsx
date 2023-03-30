@@ -9,12 +9,13 @@ interface Props {
 }
 
 export default function Contact(props: Props) {
+    // TODO: Maybe contact in about?
     return (
         <>
             <h2 className={'btn contact-btn ' + (props.hidden ? 'hidden' : '')} onMouseDown={props.click}>
                 {props.open ? '[-Contact]' : '[+Contact]'}
             </h2>
-            <div className={'contact ' + (props.open ? '' : 'hidden')}>
+            <div className={'contact maximized ' + (props.open ? '' : 'hidden')}>
                 {
                     data.contacts.map((item) =>
                         <ContactItem name={item.name} image={item.image} link={item.link} />

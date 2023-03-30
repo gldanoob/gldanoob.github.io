@@ -24,7 +24,7 @@ export default function Projects(props: Props) {
             <h2 className={'btn projects-btn ' + (props.hidden ? 'hidden' : '')} onClick={props.click}>
                 {props.open ? '[-Projects]' : '[+Projects]'}
             </h2>
-            <div className={'projects ' + (props.open ? '' : 'hidden')}>
+            <div className={'projects maximized ' + (props.open ? '' : 'hidden')}>
                 {/* TODO: Fix Dumb way to add images */}
                 <img src={data.projects[selected].image} className='project-image' onMouseDown={nav} />
                 <div className='project-list'>

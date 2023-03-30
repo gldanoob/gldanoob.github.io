@@ -1,16 +1,25 @@
-.about {
+.about-container {
     font-size: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1em;
-    transition: all 0.5s ease-in-out;
     z-index: 1;
+}
+
+.about {
+    margin: 1em;
+    transition: all 0.5s ease-in-out;
     text-align: center;
 }
 
 .about>* {
     padding: 0em;
+}
+
+.description {
+    margin: 0 0 1em;
+    color: #c0c0c5;
 }
 
 h1 {
