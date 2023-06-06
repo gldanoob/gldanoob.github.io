@@ -7,28 +7,34 @@
             "url": "https://cw-dashboard-4b5b2.web.app/mod/CS101"
         },
         {
+            "name": "AGB web",
+            "description": "holy",
+            "image": "assets/agb.png",
+            "url": "assets/agb.png"
+        },
+        {
             "name": "NOOBLANG",
             "description": "",
             "image": "assets/nooblang.png",
             "url": "https://github.com/gldanoob/nooblang-rust"
         },
         {
-            "name": "Neural Network in Rust",
-            "description": "???",
-            "image": "assets/maf.png",
-            "url": "https://github.com/gldanoob/nn-rust"
+            "name": "Texel",
+            "description": "",
+            "image": "assets/texel.gif",
+            "url": "https://github.com/gldanoob/texel-py"
         },
         {
-            "name": "Sussy mosiac",
+            "name": "Sussy Mosiac",
             "description": "",
             "image": "assets/amog.gif",
             "url": "https://github.com/gldanoob/sussy-mosaic"
         },
         {
-            "name": "3D engine in terminal",
-            "description": "",
-            "image": "assets/3d.gif",
-            "url": ""
+            "name": "Neural Network in Rust",
+            "description": "???",
+            "image": "assets/maf.png",
+            "url": "https://github.com/gldanoob/nn-rust"
         },
         {
             "name": "More on GitHub",
