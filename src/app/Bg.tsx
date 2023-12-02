@@ -15,7 +15,7 @@ export default function Bg(props: Props) {
             <div className='wave'>
                 <svg viewBox="0 0 10 10" height="100%" width="100%">
                     <path
-                        stroke='#aaa' strokeWidth='0.005px' fill='#2e3138' fillRule='evenodd'>
+                        stroke='#aaa' strokeWidth='0.005px' fillRule='evenodd'>
                         <animate id="first" attributeName="d" dur="3s"
                             repeatCount='indefinite'
                             calcMode="spline"

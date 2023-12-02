@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import data from '../data/data.json';
 import '../style/Projects.css';
 import ProjectItem from './ProjectItem';
@@ -10,6 +11,14 @@ interface Props {
 }
 
 export default function Projects(props: Props) {
+
+    const navigate = useNavigate();
+    const click = () => {
+        if (props.open) navigate('/');
+        else navigate('/projects');
+        props.click();
+    }
+
     const [selected, setSelected] = useState(0);
     const select = (index: number) => {
         setSelected(index);
@@ -21,7 +30,7 @@ export default function Projects(props: Props) {
 
     return (
         <>
-            <h2 className={'btn projects-btn ' + (props.hidden ? 'hidden' : '')} onClick={props.click}>
+            <h2 className={'btn projects-btn ' + (props.hidden ? 'hidden' : '')} onClick={click}>
                 {props.open ? '[-Projects]' : '[+Projects]'}
             </h2>
             <div className={'projects maximized ' + (props.open ? '' : 'hidden')}>

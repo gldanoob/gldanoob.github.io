@@ -33,6 +33,11 @@
     position: absolute;
     right: 0px;
     top: 0px;
+    /* background-color: #2e3138; */
+}
+
+path {
+    fill: var(--wave-color);
 }
 
 .right-fill {
@@ -40,7 +45,8 @@
     left: 120vh;
     height: 200vh;
     width: 200vw;
-    background-color: #2e3138;
+    background-color: var(--wave-color);
+    background: none;
 }
 
 .bottom-fill {
@@ -48,7 +54,7 @@
     top: 120vh;
     width: 200vw;
     height: 200vh;
-    background-color: #2e3138;
+    background-color: var(--wave-color);
 }
 
 @media all and (orientation:portrait) {
@@ -62,7 +68,7 @@
         left: 150vw;
         height: 200vh;
         width: 200vw;
-        background-color: #2e3138;
+        background-color: var(--wave-color);
     }
 
     .bottom-fill {
@@ -70,7 +76,7 @@
         top: 150vw;
         width: 200vw;
         height: 200vh;
-        background-color: #2e3138;
+        background-color: var(--wave-color);
     }
 }
 
@@ -85,7 +91,7 @@
         left: 120vh;
         height: 200vh;
         width: 200vw;
-        background-color: #2e3138;
+        background-color: var(--wave-color);
     }
 
     .bottom-fill {
@@ -93,7 +99,7 @@
         top: 120vh;
         width: 200vw;
         height: 200vh;
-        background-color: #2e3138;
+        background-color: var(--wave-color);
     }
 }
 
