@@ -46,19 +46,24 @@
 
 @keyframes rotate {
     0% {
-        transform: perspective(1000px) rotate3d(0, 1, 0, -10deg);
+        transform: perspective(1000px) rotate3d(1, 0, 0, -10deg);
     }
 
     100% {
-        transform: perspective(1000px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(1000px) rotate3d(1, 0, 0, 10deg);
     }
 }
 
 .project-image {
     display: block;
     width: 40vw;
-    animation: rotate 5s ease-in-out infinite alternate;
+    /* animation: rotate 10s ease-in-out infinite alternate; */
     opacity: .9;
+    transition-duration: .3s;
+}
+
+.project-image:hover {
+    opacity: .5;
 }
 
 .selected {
