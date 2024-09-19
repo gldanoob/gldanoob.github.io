@@ -57,7 +57,12 @@
         {
             "name": "Gmail",
             "image": "assets/gmail.svg",
-            "link": "mailto:caleblolhk@gmail.com"
+            "link": "mailto:me@gldanoob.dev"
+        },
+        {
+            "name": "Instagram",
+            "image": "assets/instagram.svg",
+            "link": "https://instagram.com/gldanoob"
         }
     ]
 }
